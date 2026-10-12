@@ -1,0 +1,17 @@
+human_label	AI_label	count
+D	D	34
+D	I	2
+D	A	0
+D	U	0
+I	D	2
+I	I	29
+I	A	3
+I	U	0
+A	D	0
+A	I	0
+A	A	8
+A	U	0
+U	D	0
+U	I	1
+U	A	0
+U	U	1

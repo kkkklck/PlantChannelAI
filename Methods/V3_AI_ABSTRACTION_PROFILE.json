@@ -1,0 +1,12 @@
+{
+  "status": "AI_PROFILE_FROZEN",
+  "model_provider": "OpenAI Codex cloud",
+  "model_id": "gpt-6-luna",
+  "model_version_or_snapshot": "gpt-6-luna service model identifier; immutable backend snapshot is not exposed",
+  "temperature": "service-managed; not exposed",
+  "other_generation_settings": "Luna primary plus mechanical checks; targeted Luna/Sol for substantive ambiguity; completed prior cloud extractions retained with original provenance",
+  "prompt_file": "V3_AI_ABSTRACTION_PROMPT.md",
+  "evidence_schema": "CURRENT_OWNERSHIP_INPUT_V1",
+  "field_location_format": "PMCID_or_DOI | published_article_version | section | figure_table_panel_or_supplement_filename_page | method_paragraph",
+  "real_prediction_permitted": "NO_PENDING_COMPLETE_EVIDENCE_AND_REVIEW"
+}

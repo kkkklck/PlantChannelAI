@@ -1,0 +1,137 @@
+method	metric	numerator	denominator	estimate	ci95_lower	ci95_upper	ci_method
+C0	human_D_count	36	80				count only
+C0	human_I_count	34	80				count only
+C0	human_A_count	8	80				count only
+C0	human_U_count	2	80				count only
+C0	D_to_DIRECT_PROMOTE	0	36				count only
+C0	D_to_NONDIRECT_WITHHOLD	0	36				count only
+C0	D_to_ABSTAIN	36	36				count only
+C0	I_plus_A_to_DIRECT_PROMOTE	0	42				count only
+C0	I_plus_A_to_NONDIRECT_WITHHOLD	0	42				count only
+C0	I_plus_A_to_ABSTAIN	42	42				count only
+C0	direct_recovery_D	0	36	0	0	0.09739375591449193	two-sided Clopper-Pearson exact 95%
+C0	erroneous_direct_promotion_I_plus_A	0	42	0	0	0.08408385494035513	two-sided Clopper-Pearson exact 95%
+C0	total_abstention_all80	80	80	1	0.9549359649323077	1	two-sided Clopper-Pearson exact 95%
+C0	abstention_rate_DIA_resolved	78	78	1	0.9538075796719513	1	two-sided Clopper-Pearson exact 95%
+C0	coverage_DIA_resolved_excluding_U	0	78	0	0	0.04619242032804872	two-sided Clopper-Pearson exact 95%
+C0	coverage_all80_nonabstain_manuscript_definition	0	80	0	0	0.045064035067692285	two-sided Clopper-Pearson exact 95%
+C0	direct_promotion_U	0	2	0	0	0.841886116991581	two-sided Clopper-Pearson exact 95%
+C1	human_D_count	36	80				count only
+C1	human_I_count	34	80				count only
+C1	human_A_count	8	80				count only
+C1	human_U_count	2	80				count only
+C1	D_to_DIRECT_PROMOTE	0	36				count only
+C1	D_to_NONDIRECT_WITHHOLD	36	36				count only
+C1	D_to_ABSTAIN	0	36				count only
+C1	I_plus_A_to_DIRECT_PROMOTE	0	42				count only
+C1	I_plus_A_to_NONDIRECT_WITHHOLD	42	42				count only
+C1	I_plus_A_to_ABSTAIN	0	42				count only
+C1	direct_recovery_D	0	36	0	0	0.09739375591449193	two-sided Clopper-Pearson exact 95%
+C1	erroneous_direct_promotion_I_plus_A	0	42	0	0	0.08408385494035513	two-sided Clopper-Pearson exact 95%
+C1	total_abstention_all80	0	80	0	0	0.045064035067692285	two-sided Clopper-Pearson exact 95%
+C1	abstention_rate_DIA_resolved	0	78	0	0	0.04619242032804872	two-sided Clopper-Pearson exact 95%
+C1	coverage_DIA_resolved_excluding_U	78	78	1	0.9538075796719513	1	two-sided Clopper-Pearson exact 95%
+C1	coverage_all80_nonabstain_manuscript_definition	80	80	1	0.9549359649323077	1	two-sided Clopper-Pearson exact 95%
+C1	direct_promotion_U	0	2	0	0	0.841886116991581	two-sided Clopper-Pearson exact 95%
+C2	human_D_count	36	80				count only
+C2	human_I_count	34	80				count only
+C2	human_A_count	8	80				count only
+C2	human_U_count	2	80				count only
+C2	D_to_DIRECT_PROMOTE	11	36				count only
+C2	D_to_NONDIRECT_WITHHOLD	25	36				count only
+C2	D_to_ABSTAIN	0	36				count only
+C2	I_plus_A_to_DIRECT_PROMOTE	1	42				count only
+C2	I_plus_A_to_NONDIRECT_WITHHOLD	40	42				count only
+C2	I_plus_A_to_ABSTAIN	1	42				count only
+C2	direct_recovery_D	11	36	0.3055555555555556	0.16347398462849355	0.4810706300000798	two-sided Clopper-Pearson exact 95%
+C2	erroneous_direct_promotion_I_plus_A	1	42	0.023809523809523808	0.0006026233016035741	0.12565855717499214	two-sided Clopper-Pearson exact 95%
+C2	total_abstention_all80	2	80	0.025	0.0030420861648095977	0.08740715593059226	two-sided Clopper-Pearson exact 95%
+C2	abstention_rate_DIA_resolved	1	78	0.01282051282051282	0.0003245346090972235	0.06937274078560499	two-sided Clopper-Pearson exact 95%
+C2	coverage_DIA_resolved_excluding_U	77	78	0.9871794871794872	0.930627259214395	0.9996754653909028	two-sided Clopper-Pearson exact 95%
+C2	coverage_all80_nonabstain_manuscript_definition	78	80	0.975	0.9125928440694078	0.9969579138351904	two-sided Clopper-Pearson exact 95%
+C2	direct_promotion_U	0	2	0	0	0.841886116991581	two-sided Clopper-Pearson exact 95%
+C4	human_D_count	36	80				count only
+C4	human_I_count	34	80				count only
+C4	human_A_count	8	80				count only
+C4	human_U_count	2	80				count only
+C4	D_to_DIRECT_PROMOTE	1	36				count only
+C4	D_to_NONDIRECT_WITHHOLD	7	36				count only
+C4	D_to_ABSTAIN	28	36				count only
+C4	I_plus_A_to_DIRECT_PROMOTE	0	42				count only
+C4	I_plus_A_to_NONDIRECT_WITHHOLD	41	42				count only
+C4	I_plus_A_to_ABSTAIN	1	42				count only
+C4	direct_recovery_D	1	36	0.027777777777777776	0.0007030252059047799	0.14528926474685327	two-sided Clopper-Pearson exact 95%
+C4	erroneous_direct_promotion_I_plus_A	0	42	0	0	0.08408385494035513	two-sided Clopper-Pearson exact 95%
+C4	total_abstention_all80	30	80	0.375	0.269193169946805	0.49035476440711223	two-sided Clopper-Pearson exact 95%
+C4	abstention_rate_DIA_resolved	29	78	0.3717948717948718	0.2649773103120148	0.48866118525728586	two-sided Clopper-Pearson exact 95%
+C4	coverage_DIA_resolved_excluding_U	49	78	0.6282051282051282	0.5113388147427143	0.7350226896879852	two-sided Clopper-Pearson exact 95%
+C4	coverage_all80_nonabstain_manuscript_definition	50	80	0.625	0.5096452355928878	0.7308068300531951	two-sided Clopper-Pearson exact 95%
+C4	direct_promotion_U	0	2	0	0	0.841886116991581	two-sided Clopper-Pearson exact 95%
+A1	human_D_count	36	80				count only
+A1	human_I_count	34	80				count only
+A1	human_A_count	8	80				count only
+A1	human_U_count	2	80				count only
+A1	D_to_DIRECT_PROMOTE	2	36				count only
+A1	D_to_NONDIRECT_WITHHOLD	7	36				count only
+A1	D_to_ABSTAIN	27	36				count only
+A1	I_plus_A_to_DIRECT_PROMOTE	0	42				count only
+A1	I_plus_A_to_NONDIRECT_WITHHOLD	41	42				count only
+A1	I_plus_A_to_ABSTAIN	1	42				count only
+A1	direct_recovery_D	2	36	0.05555555555555555	0.006800300654022815	0.186636706457554	two-sided Clopper-Pearson exact 95%
+A1	erroneous_direct_promotion_I_plus_A	0	42	0	0	0.08408385494035513	two-sided Clopper-Pearson exact 95%
+A1	total_abstention_all80	29	80	0.3625	0.25789489537161797	0.47761272126480847	two-sided Clopper-Pearson exact 95%
+A1	abstention_rate_DIA_resolved	28	78	0.358974358974359	0.2534318705552889	0.47557597145162894	two-sided Clopper-Pearson exact 95%
+A1	coverage_DIA_resolved_excluding_U	50	78	0.6410256410256411	0.524424028548371	0.7465681294447111	two-sided Clopper-Pearson exact 95%
+A1	coverage_all80_nonabstain_manuscript_definition	51	80	0.6375	0.5223872787351915	0.742105104628382	two-sided Clopper-Pearson exact 95%
+A1	direct_promotion_U	0	2	0	0	0.841886116991581	two-sided Clopper-Pearson exact 95%
+A2	human_D_count	36	80				count only
+A2	human_I_count	34	80				count only
+A2	human_A_count	8	80				count only
+A2	human_U_count	2	80				count only
+A2	D_to_DIRECT_PROMOTE	2	36				count only
+A2	D_to_NONDIRECT_WITHHOLD	7	36				count only
+A2	D_to_ABSTAIN	27	36				count only
+A2	I_plus_A_to_DIRECT_PROMOTE	0	42				count only
+A2	I_plus_A_to_NONDIRECT_WITHHOLD	41	42				count only
+A2	I_plus_A_to_ABSTAIN	1	42				count only
+A2	direct_recovery_D	2	36	0.05555555555555555	0.006800300654022815	0.186636706457554	two-sided Clopper-Pearson exact 95%
+A2	erroneous_direct_promotion_I_plus_A	0	42	0	0	0.08408385494035513	two-sided Clopper-Pearson exact 95%
+A2	total_abstention_all80	29	80	0.3625	0.25789489537161797	0.47761272126480847	two-sided Clopper-Pearson exact 95%
+A2	abstention_rate_DIA_resolved	28	78	0.358974358974359	0.2534318705552889	0.47557597145162894	two-sided Clopper-Pearson exact 95%
+A2	coverage_DIA_resolved_excluding_U	50	78	0.6410256410256411	0.524424028548371	0.7465681294447111	two-sided Clopper-Pearson exact 95%
+A2	coverage_all80_nonabstain_manuscript_definition	51	80	0.6375	0.5223872787351915	0.742105104628382	two-sided Clopper-Pearson exact 95%
+A2	direct_promotion_U	0	2	0	0	0.841886116991581	two-sided Clopper-Pearson exact 95%
+A3	human_D_count	36	80				count only
+A3	human_I_count	34	80				count only
+A3	human_A_count	8	80				count only
+A3	human_U_count	2	80				count only
+A3	D_to_DIRECT_PROMOTE	1	36				count only
+A3	D_to_NONDIRECT_WITHHOLD	35	36				count only
+A3	D_to_ABSTAIN	0	36				count only
+A3	I_plus_A_to_DIRECT_PROMOTE	0	42				count only
+A3	I_plus_A_to_NONDIRECT_WITHHOLD	42	42				count only
+A3	I_plus_A_to_ABSTAIN	0	42				count only
+A3	direct_recovery_D	1	36	0.027777777777777776	0.0007030252059047799	0.14528926474685327	two-sided Clopper-Pearson exact 95%
+A3	erroneous_direct_promotion_I_plus_A	0	42	0	0	0.08408385494035513	two-sided Clopper-Pearson exact 95%
+A3	total_abstention_all80	0	80	0	0	0.045064035067692285	two-sided Clopper-Pearson exact 95%
+A3	abstention_rate_DIA_resolved	0	78	0	0	0.04619242032804872	two-sided Clopper-Pearson exact 95%
+A3	coverage_DIA_resolved_excluding_U	78	78	1	0.9538075796719513	1	two-sided Clopper-Pearson exact 95%
+A3	coverage_all80_nonabstain_manuscript_definition	80	80	1	0.9549359649323077	1	two-sided Clopper-Pearson exact 95%
+A3	direct_promotion_U	0	2	0	0	0.841886116991581	two-sided Clopper-Pearson exact 95%
+A4	human_D_count	36	80				count only
+A4	human_I_count	34	80				count only
+A4	human_A_count	8	80				count only
+A4	human_U_count	2	80				count only
+A4	D_to_DIRECT_PROMOTE	1	36				count only
+A4	D_to_NONDIRECT_WITHHOLD	7	36				count only
+A4	D_to_ABSTAIN	28	36				count only
+A4	I_plus_A_to_DIRECT_PROMOTE	0	42				count only
+A4	I_plus_A_to_NONDIRECT_WITHHOLD	41	42				count only
+A4	I_plus_A_to_ABSTAIN	1	42				count only
+A4	direct_recovery_D	1	36	0.027777777777777776	0.0007030252059047799	0.14528926474685327	two-sided Clopper-Pearson exact 95%
+A4	erroneous_direct_promotion_I_plus_A	0	42	0	0	0.08408385494035513	two-sided Clopper-Pearson exact 95%
+A4	total_abstention_all80	29	80	0.3625	0.25789489537161797	0.47761272126480847	two-sided Clopper-Pearson exact 95%
+A4	abstention_rate_DIA_resolved	29	78	0.3717948717948718	0.2649773103120148	0.48866118525728586	two-sided Clopper-Pearson exact 95%
+A4	coverage_DIA_resolved_excluding_U	49	78	0.6282051282051282	0.5113388147427143	0.7350226896879852	two-sided Clopper-Pearson exact 95%
+A4	coverage_all80_nonabstain_manuscript_definition	51	80	0.6375	0.5223872787351915	0.742105104628382	two-sided Clopper-Pearson exact 95%
+A4	direct_promotion_U	0	2	0	0	0.841886116991581	two-sided Clopper-Pearson exact 95%

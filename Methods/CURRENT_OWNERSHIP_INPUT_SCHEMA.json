@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "PlantChannelAI/CurrentOwnershipInput/V1",
+  "title": "Current Ownership Audit Input V1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "record_id", "development_role", "target", "provenance", "observation", "carrier_tests", "ownership_tests", "catalytic_context", "host_context", "source_citations"],
+  "properties": {
+    "schema_version": {"const": "CURRENT_OWNERSHIP_INPUT_V1"},
+    "record_id": {"type": "string", "minLength": 1},
+    "development_role": {"enum": ["RETROSPECTIVE_DEVELOPMENT", "SYNTHETIC_REACHABILITY", "PROSPECTIVE_APPLICATION"]},
+    "target": {
+      "type": "object", "additionalProperties": false,
+      "required": ["name", "accession", "construct"],
+      "properties": {"name": {"type": "string"}, "accession": {"type": "string"}, "construct": {"type": "string"}}
+    },
+    "provenance": {
+      "type": "object", "additionalProperties": false,
+      "required": ["source_identity", "target_identity", "construct_mapping", "assay_description"],
+      "properties": {
+        "source_identity": {"enum": ["EXACT", "PARTIAL", "UNRESOLVED", "CONFLICTING"]},
+        "target_identity": {"enum": ["EXACT", "PARTIAL", "UNRESOLVED", "CONFLICTING"]},
+        "construct_mapping": {"enum": ["EXACT", "PARTIAL", "UNRESOLVED", "CONFLICTING"]},
+        "assay_description": {"enum": ["EXACT", "PARTIAL", "UNRESOLVED", "CONFLICTING"]}
+      }
+    },
+    "observation": {
+      "type": "object", "additionalProperties": false,
+      "required": ["system", "current_detected", "direct_ion_flux_detected", "calcium_indicator_change", "genetic_or_phenotype_association"],
+      "properties": {
+        "system": {"enum": ["PURIFIED_RECONSTITUTED", "HETEROLOGOUS_CELL", "NATIVE_CELL", "CELLULAR_IMAGING", "ORGANISM", "OTHER"]},
+        "current_detected": {"type": "boolean"},
+        "direct_ion_flux_detected": {"type": "boolean"},
+        "calcium_indicator_change": {"type": "boolean"},
+        "genetic_or_phenotype_association": {"type": "boolean"}
+      }
+    },
+    "carrier_tests": {
+      "type": "object", "additionalProperties": false,
+      "required": ["ion_identity", "controlled_gradient_reversal", "bi_ionic_permeability", "direct_tracer_or_encapsulated_flux", "single_channel_ion_identity", "salt_amplitude_only", "nonion_current_identity_directly_established"],
+      "properties": {
+        "ion_identity": {"enum": ["CA2", "CATION", "ANION", "PROTON", "MIXED_ION", "UNRESOLVED", "NONION_ELECTRON"]},
+        "controlled_gradient_reversal": {"type": "boolean"},
+        "bi_ionic_permeability": {"type": "boolean"},
+        "direct_tracer_or_encapsulated_flux": {"type": "boolean"},
+        "single_channel_ion_identity": {"type": "boolean"},
+        "salt_amplitude_only": {"type": "boolean"},
+        "nonion_current_identity_directly_established": {"type": "boolean"}
+      }
+    },
+    "ownership_tests": {
+      "type": "object", "additionalProperties": false,
+      "required": ["purified_target_reconstitution", "protein_free_control", "surface_expression_verified", "target_specific_current_loss_and_rescue", "pathway_mutation_abolishes_ionic_endpoint_while_other_function_retained"],
+      "properties": {
+        "purified_target_reconstitution": {"type": "boolean"},
+        "protein_free_control": {"type": "boolean"},
+        "surface_expression_verified": {"type": "boolean"},
+        "target_specific_current_loss_and_rescue": {"type": "boolean"},
+        "pathway_mutation_abolishes_ionic_endpoint_while_other_function_retained": {"type": "boolean"}
+      }
+    },
+    "catalytic_context": {
+      "type": "object", "additionalProperties": false,
+      "required": ["plausible_electrogenic_reaction", "reaction_type", "separation_methods"],
+      "properties": {
+        "plausible_electrogenic_reaction": {"type": "boolean"},
+        "reaction_type": {"enum": ["NONE", "ELECTRON_TRANSFER", "PROTON_TRANSPORT", "COUPLED_TRANSPORT", "OTHER", "UNRESOLVED"]},
+        "separation_methods": {
+          "type": "array", "uniqueItems": true,
+          "items": {"enum": ["CATALYTIC_NULL_RETAINS_IONIC_ENDPOINT", "SUBSTRATE_COFACTOR_ACCEPTOR_WITHDRAWAL_RETAINS_IONIC_ENDPOINT", "SIMULTANEOUS_CATALYTIC_ELECTRICAL_DISSOCIATION", "PURIFIED_INDEPENDENT_ION_AND_CATALYSIS_MEASUREMENTS"]}
+        }
+      }
+    },
+    "host_context": {
+      "type": "object", "additionalProperties": false,
+      "required": ["applicable_confounders", "excluded_confounders", "host_current_directly_established", "ionic_endpoint_survives_controls"],
+      "properties": {
+        "applicable_confounders": {"type": "array", "uniqueItems": true, "items": {"enum": ["CALCIUM_ACTIVATED_CHLORIDE", "ACID_HYPERPOLARIZATION_CURRENT", "ENDOGENOUS_CATION_CHANNEL", "OXIDANT_ACTIVATED_CURRENT", "EXPRESSION_STRESS", "CHARGE_COMPENSATION"]}},
+        "excluded_confounders": {"type": "array", "uniqueItems": true, "items": {"enum": ["CALCIUM_ACTIVATED_CHLORIDE", "ACID_HYPERPOLARIZATION_CURRENT", "ENDOGENOUS_CATION_CHANNEL", "OXIDANT_ACTIVATED_CURRENT", "EXPRESSION_STRESS", "CHARGE_COMPENSATION"]}},
+        "host_current_directly_established": {"type": "boolean"},
+        "ionic_endpoint_survives_controls": {"type": "boolean"}
+      }
+    },
+    "source_citations": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+    "notes": {"type": "array", "items": {"type": "string"}}
+  }
+}

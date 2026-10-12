@@ -1,0 +1,2 @@
+# Public snapshot reproduction verified with Python 3.12.5
+scipy==1.18.1

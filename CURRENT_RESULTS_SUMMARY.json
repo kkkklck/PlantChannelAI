@@ -1,0 +1,56 @@
+{
+  "cases": 80,
+  "human_AI_exact_agreement_n": 72,
+  "human_AI_cohen_kappa": 0.8369842078451348,
+  "human_counts": {
+    "I": 34,
+    "D": 36,
+    "A": 8,
+    "U": 2
+  },
+  "AI_counts": {
+    "I": 32,
+    "D": 36,
+    "A": 11,
+    "U": 1
+  },
+  "human_reference_design": "Single project-author case-level blinded sensitivity review; not external dual-human validation",
+  "recruitment_strata": {
+    "R1": 21,
+    "R2": 40,
+    "R3": 19
+  },
+  "source_access_counts": {
+    "EXISTING_FREE": 26,
+    "UNKNOWN_LOCAL_ACCESS": 15,
+    "NEW_FREE_PUBLISHER": 5,
+    "NEW_FREE_PMC": 34
+  },
+  "distinct_DOI_sources": 76,
+  "D_vs_non_D_agreement_n": 76,
+  "D_vs_non_D_cohen_kappa": 0.8989898989898989,
+  "AI_D_gate_gap_counts": {
+    "ownership_unmet": 34,
+    "host_separation_unmet": 31,
+    "physical_ion_unmet": 24,
+    "current_flux_unmet": 5,
+    "catalytic_separation_unmet": 4,
+    "provenance_unmet": 0
+  },
+  "history_stratum_counts": {
+    "existing_41": 41,
+    "new_39": 39,
+    "gpt-6-astra": 11,
+    "gpt-6-luna": 69
+  },
+  "disagreement_case_ids": [
+    "PCAV3-014",
+    "PCAV3-019",
+    "PCAV3-020",
+    "PCAV3-021",
+    "PCAV3-023",
+    "PCAV3-027",
+    "PCAV3-042",
+    "PCAV3-055"
+  ]
+}

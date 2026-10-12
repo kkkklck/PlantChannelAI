@@ -1,0 +1,16 @@
+record_kind	dimension_or_pattern	count	denominator	ownership_unmet	host_separation_unmet	physical_ion_unmet	current_flux_unmet	catalytic_separation_unmet	provenance_unmet
+MARGINAL	ownership_unmet	34	36						
+MARGINAL	host_separation_unmet	31	36						
+MARGINAL	physical_ion_unmet	24	36						
+MARGINAL	current_flux_unmet	5	36						
+MARGINAL	catalytic_separation_unmet	4	36						
+MARGINAL	provenance_unmet	0	36						
+EXACT_COMBINATION	ownership_unmet;host_separation_unmet;physical_ion_unmet	15	36	1	1	1	0	0	0
+EXACT_COMBINATION	ownership_unmet;host_separation_unmet	8	36	1	1	0	0	0	0
+EXACT_COMBINATION	ownership_unmet;host_separation_unmet;physical_ion_unmet;current_flux_unmet	5	36	1	1	1	1	0	0
+EXACT_COMBINATION	ownership_unmet;physical_ion_unmet	2	36	1	0	1	0	0	0
+EXACT_COMBINATION	ownership_unmet;host_separation_unmet;physical_ion_unmet;catalytic_separation_unmet	2	36	1	1	1	0	1	0
+EXACT_COMBINATION	NONE	1	36	0	0	0	0	0	0
+EXACT_COMBINATION	catalytic_separation_unmet	1	36	0	0	0	0	1	0
+EXACT_COMBINATION	ownership_unmet	1	36	1	0	0	0	0	0
+EXACT_COMBINATION	ownership_unmet;host_separation_unmet;catalytic_separation_unmet	1	36	1	1	0	0	1	0

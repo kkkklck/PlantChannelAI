@@ -1,0 +1,3 @@
+stratum	n	C2_direct_C4_direct	C2_direct_C4_not_direct	C2_not_direct_C4_direct	both_not_direct	discordant_pairs	exact_mcnemar_two_sided_p	paired_direct_recovery_difference_C2_minus_C4
+human_D	36	1	10	0	25	10	0.001953125	0.2777777777777778
+human_I_plus_A	42	0	1	0	41	1	1	0.023809523809523808

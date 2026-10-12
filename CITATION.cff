@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "Please cite this repository snapshot when using or discussing the supplied analysis materials."
+type: software
+title: "PlantChannelAI: molecular-attribution evidence analysis of plant membrane-protein ion transport"
+authors:
+  - family-names: "廖"
+    given-names: "丛楷"
+version: 1.0.0
+date-released: 2026-10-12
+repository-code: "https://github.com/kkkklck/PlantChannelAI"
+url: "https://github.com/kkkklck/PlantChannelAI"
+abstract: "Frozen code and derived data for a fixed 80-case mixed-literature analysis of ionic-component and molecular-attribution evidence, including separate AI and author references, evidence-gap co-occurrence, and four exploratory attribution case studies."
+keywords:
+  - plant membrane proteins
+  - ion transport
+  - molecular attribution
+  - evidence analysis
+  - reproducibility

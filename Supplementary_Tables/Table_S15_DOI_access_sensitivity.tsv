@@ -1,0 +1,16 @@
+method	subset	metric	estimator	weighted_numerator	weighted_denominator	weighted_estimate	ci95_lower	ci95_upper	weighting	case_count	source_count_in_subset
+C4	all_fixed_membership	direct_recovery_D	DOI_cluster_balanced	1.0	32.0	0.03125			each original DOI cluster total weight 1; descriptive only; no confidence interval	80	76
+C4	all_fixed_membership	erroneous_direct_promotion_I_plus_A	DOI_cluster_balanced	0	43.0	0.0			each original DOI cluster total weight 1; descriptive only; no confidence interval	80	76
+C4	all_fixed_membership	total_abstention	DOI_cluster_balanced	26.0	76.0	0.34210526315789475			each original DOI cluster total weight 1; descriptive only; no confidence interval	80	76
+C4	all_fixed_membership	resolved_coverage_nonabstention	DOI_cluster_balanced	50.0	76.0	0.6578947368421053			each original DOI cluster total weight 1; descriptive only; no confidence interval	80	76
+C4	all_fixed_membership	direct_promotion_U	DOI_cluster_balanced	0	1.0	0.0			each original DOI cluster total weight 1; descriptive only; no confidence interval	80	76
+C4	free_text_source_subset	direct_recovery_D	DOI_cluster_balanced	1.0	26.0	0.038461538461538464			each original DOI cluster total weight 1; descriptive only; no confidence interval	65	61
+C4	free_text_source_subset	direct_recovery_D	unweighted_case_proportion	1	30	0.03333333333333333			each case weight 1; free-full-text subset descriptive only; no CI	65	61
+C4	free_text_source_subset	erroneous_direct_promotion_I_plus_A	DOI_cluster_balanced	0	34.0	0.0			each original DOI cluster total weight 1; descriptive only; no confidence interval	65	61
+C4	free_text_source_subset	erroneous_direct_promotion_I_plus_A	unweighted_case_proportion	0	34	0.0			each case weight 1; free-full-text subset descriptive only; no CI	65	61
+C4	free_text_source_subset	total_abstention	DOI_cluster_balanced	21.0	61.0	0.3442622950819672			each original DOI cluster total weight 1; descriptive only; no confidence interval	65	61
+C4	free_text_source_subset	total_abstention	unweighted_case_proportion	25	65	0.38461538461538464			each case weight 1; free-full-text subset descriptive only; no CI	65	61
+C4	free_text_source_subset	resolved_coverage_nonabstention	DOI_cluster_balanced	40.0	61.0	0.6557377049180327			each original DOI cluster total weight 1; descriptive only; no confidence interval	65	61
+C4	free_text_source_subset	resolved_coverage_nonabstention	unweighted_case_proportion	40	65	0.6153846153846154			each case weight 1; free-full-text subset descriptive only; no CI	65	61
+C4	free_text_source_subset	direct_promotion_U	DOI_cluster_balanced	0	1.0	0.0			each original DOI cluster total weight 1; descriptive only; no confidence interval	65	61
+C4	free_text_source_subset	direct_promotion_U	unweighted_case_proportion	0	1	0.0			each case weight 1; free-full-text subset descriptive only; no CI	65	61

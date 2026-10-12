@@ -1,0 +1,5 @@
+C2_direct	C4_direct	count
+True	True	1
+True	False	10
+False	True	0
+False	False	25

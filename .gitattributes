@@ -1,0 +1,3 @@
+# Preserve the original frozen engine/mapping bytes, including their newlines.
+# v2_method.py verifies these pre-existing bytes before evaluation.
+* -text

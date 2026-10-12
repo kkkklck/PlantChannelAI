@@ -1,0 +1,20 @@
+# Fixed blinded AI reference-label task
+
+Model: gpt-6-luna. This is an exploratory AI reference-label assessment, not independent human adjudication. The user selected this route before any V3 truth review or unblinding. Reviewer A and reviewer B use separate contexts and cannot access one another's records. Do not call Astra.
+
+Read only the assigned entries of V3_TRUTH_SOURCE_INPUT.json and their specified original article, Results, Methods, figures and necessary supplements. You may use original publisher/PMC routes for those same sources. Do not read prediction files, prediction seals, extracted prediction evidence, primary/checker/resolution JSONs, prior truth labels, recruitment strata or curator experiment summaries. Do not inspect any output of a different reviewer. Do not run scientific engines or search new candidates.
+
+Apply the inherited D/I/A/U rubric and its already accepted Step 1 clarification:
+
+- D: the exact target/construct is sufficiently confirmed; direct current or flux is experimentally established; molecular ownership is reasonably supported; and ion identity/selectivity/permeability has direct experimental support. Purified reconstitution OR strong heterologous expression with appropriate controls and ion evidence can establish D. A target-specific mutation is supportive but not universally required. Structure, topology, cavity, conservation or phenotype alone never establishes D.
+- I: ion-related evidence exists, D is not established, and no stronger non-conduction primary mechanism dominates. Partial target/construct attribution does not automatically force I to U, but I explicitly withholds direct molecular conduction attribution.
+- A: direct molecular conduction is unsupported and experimental support is stronger for a non-conduction primary mechanism (for example enzyme, electron transfer, receptor, regulation or scaffolding). Do not label an ordinary ion transporter A merely because transport is active rather than passive.
+- U: evidence is unresolved, conflicting, inadequate for D/I/A, or has LOW confidence. Irreconcilable high-quality direct/alternative evidence is U. Partial identity alone only blocks D, not an otherwise supported I/A. Lack of ownership alone does not suppress an otherwise supported I/A; unresolved ownership coupled to inadequate I/A evidence is U.
+
+These reference labels are article-level scientific judgments under the inherited rubric, not a reproduction of the stricter frozen prediction engine gates. Do not require every engine gate to establish reference D. Do not use anticipated predictions or balance the label distribution.
+
+For each case output JSON with: case_id, target, source DOI, reviewer_id (A or B), model_id (gpt-6-luna), final_truth_DIAU, confidence (HIGH/MODERATE/LOW), exact_target_confirmed, exact_construct_confirmed, direct_current_or_flux, molecular_ownership_supported, ion_identity_supported, selectivity_or_permeability_supported, ion_related_evidence, alternative_mechanism_supported, full_text_reviewed, rationale, unresolved_fields, source_material and source_spans. Evidence fields use YES/NO/PARTIAL/UNKNOWN. LOW must be U. NO means not established in this article, not biological proof of absence.
+
+Supply at least two short exact contiguous source quotes, with material_path and actual section/page/figure/panel location supporting the judgment. Do not borrow an experiment on a different protein in the same article. Distinguish assay readout from molecular attribution. A source quote must actually occur in the original material; do not use a synthesized paraphrase as an exact quote. Necessary supplements only; do not exhaustively reanalyse numerical data.
+
+Work in assigned batches and save completed cases incrementally with apply_patch. If access/parsing fails, retry once then record U, LOW, full_text_reviewed=NO and TECHNICAL_REVIEW_FAILURE, continue. Do not silently treat unexecuted cases as failed. Never read another reviewer's output or any prediction output. No new receipts, hashes, audit layers or protocols.
