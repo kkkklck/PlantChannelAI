@@ -18,9 +18,9 @@ Detecting an ion current, identifying its ionic component, and identifying the p
 
 This repository provides the data and deterministic analysis code supporting an **80-case mixed-literature study**, together with **four exploratory attribution case studies**.
 
-| Study cases | DOI sources | Analysis methods | Supplementary tables |
-| :---: | :---: | :---: | :---: |
-| **80** | **76** | **8** | **18** |
+                                        | Study cases | DOI sources | Analysis methods | Supplementary tables |
+                                        | :---: | :---: | :---: | :---: |
+                                        | **80** | **76** | **8** | **18** |
 
 ## Quick start
 
